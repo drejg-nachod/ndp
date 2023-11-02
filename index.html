@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Náchodské dny poezie 2023</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script>
+		function updateContent() {
+			const today = new Date().toISOString().substring(0, 10);
+
+			// do not color out any events if it's not June anymore
+			if (today >= "2023-11-30") { return; }
+
+			var currentEvents = document.getElementById("current-events");
+			var pastEvents = document.getElementById("past-events");
+			var events = currentEvents.children;
+
+			var pastIndex = -1;
+			for (var index = 0; index < events.length; index++) {
+				var timestamp = events[index].getAttribute("timestamp");
+				if (timestamp < today) { pastIndex += 1; }
+			}
+			for (var index = 0; index <= pastIndex; index++) {
+				pastEvents.appendChild(events[0]);
+			}
+		}
+	</script>
+</head>
+<body onload="updateContent()">
+	<main>
+	<content>
+		<div class="logo">
+			<img src="logo.svg" alt="Náchodské dny poezie" />
+		</div>
+		<div class="year">2023</div>
+		<header>
+			<a target="_blank" href="https://www.facebook.com/nachodskednypoezie.cz">
+				<img src="facebook.svg" alt="Facebook Náchodské dny poezieu">
+			</a>
+		</header>
+		<article id="current-events">
+<div class='event' timestamp='2023-11-01'>
+<p class='date'>Středa 1. 11., 18:11</p>
+<p class='place'>Jiráskovo gymnázium Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/340989281837374/' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'>Veselé zahájení cyklem Bez básně a hany</p>
+<p class='author'>DRED</p>
+<p class='description'>Zahajovací performance 14.ročníku festivalu. ČTENÍ BÁSNÍ Z LISTŮ.</p>
+</div>
+<div class='event' timestamp='2023-11-02'>
+<p class='date'>Čtvrtek 2. 11., 19:00</p>
+<p class='place'>Městská knihovna Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/1009968470262242/' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'></p>
+<p class='author'>Hm...</p>
+<p class='description'>Dělají Klukoviny (2011). Nevadí (2019). Mají Plán na zimu (2008).<br>Zvou vás i večer na hudební a poetický Oběd (2004). Tak Lovu zdar (2013)! …to by mohlo být zajímavé (2000).<br>Vlastní texty i texty hvězdných českých básníků (Seifert, Nezval, Wolker, Šrámek, Kainar, …) v originálních hudebních aranžích, s ironií a vtipem, v bravurním muzikantském podání.<br>Vstupné: 120 Kč v předprodeji MIC NÁCHOD/ 150 Kč na místě</p>
+</div>
+<div class='event' timestamp='2023-11-04'>
+<p class='date'>Sobota 4. 11., 18:00</p>
+<p class='place'>Galerie U Mistra s palmou</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/186416154496779/' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'>Pouhá ryba ve vodě</p>
+<p class='author'>Pouhá ryba</p>
+<p class='description'>Všechny cesty vedou domů! Večer kombinující audiovizuální perfomance s recitací. Skupina autorů z Náchoda a jeho okolí společně skrze živou hudbu, filmový záznam a autorské básně ohledává ústřední motiv domoviny a vztahu k ní.<br>Vstupné: 70 Kč</p>
+</div>
+<div class='event' timestamp='2023-11-10'>
+<p class='date'>Pátek 10. 11., 17:00</p>
+<p class='place'>Jiráskovo gymnázium Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/1485636782251034' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'>Káťa a Bajaja</p>
+<p class='author'>Aldente/Vladimír Holan</p>
+<p class='description'>Brněnský divadelní soubor Aldente, částečně složený z herců s downovým syndromem, přiváží inscenaci na motivy básnické sbírky Vladimíra Holana Bajaja. Holan ve své sbírce, napsané jeho dceři Kátě, vykresluje v rámci jednoho roku krásu života, přírody a symboliku slova.<br>„Však knížky ty dál zůstávají. Ty dobré ničí každé zlo.“<br>Režie: Jitka Vrbková<br>Web: <a href='https://www.divadloaldente.cz' target='_blank'>divadloaldente.cz</a><br>Vstupné: dospělí 120 Kč v předprodeji / 150 Kč na místě, děti 60 Kč v předprodeji / 80 Kč na místě</p>
+</div>
+<div class='event' timestamp='2023-11-14'>
+<p class='date'>Úterý 14. 11., 19:00</p>
+<p class='place'>Jiráskovo gymnázium Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/1699475980555464/' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'></p>
+<p class='author'>Mirek Kemel/Vladimír Javorský</p>
+<p class='description'>Však už to znáte, jsou to naše stálice a my se na ně nesmírně těšíme. A jelikož přichází podzim, doufáme, že jste ze skříně vytáhli svetry, utrhli si v sadu jablíčko a nachystali si dříví do kamen. Hudební večer v podání těchto dvou umělců vám jistě zahřeje duši a zažene podzimní melancholii.<br><a href='https://www.youtube.com/watch?v=eGA0tnNny4E'>YouTube: Podzim</a><br>Vstupné: 120 Kč v předprodeji / 150 Kč na místě</p>
+</div>
+<div class='event' timestamp='2023-11-22'>
+<p class='date'>Středa 22. 11., 16:00</p>
+<p class='place'>Jiráskovo gymnázium Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/1750299372109624/' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'>Poezie pro předškolní poety aneb Leporelohraní</p>
+<p class='author'></p>
+<p class='description'>PřeČíst spolu - Kamarádky, co rády čtou dětem, si tentokrát budou hrát s poezií pro nejmenší i ty trošku větší děti.<br>Vstupné: dobrovolné</p>
+</div>
+<div class='event' timestamp='2023-11-24'>
+<p class='date'>Pátek 24. 11., 19:00</p>
+<p class='place'>Jiráskovo gymnázium Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/1500327327399666' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'></p>
+<p class='author'>Lucie Dlabolová a band</p>
+<p class='description'>Klavíristka, zpěvačka a skladatelka Lucie Dlabolová zahraje v doprovodu Petra Dlaboly (kotrabas) a Jana Páchy (kytara). Trio rozezní aulu Jiráskova gymnázia folkově-poetickou tvorbou. Kromě autorských prací zazní též skladby skladatele Jiřího Bulise, známého pro svou muzickou tvorbu básnickou, filmovou i divadelní.<br>Vstupné: 120 Kč v předprodeji / 150 Kč na místě</p>
+</div>
+<div class='event' timestamp='2023-11-24'>
+<p class='date'>Pátek 24. 11., 19:00</p>
+<p class='place'>Knihkupectví Horová</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/1500327327399666' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'>Autorské čtení MLAT</p>
+<p class='author'></p>
+<p class='description'>V nezaměnitelném prostředí náchodského knihkupectví si poslechneme několik mladých autorů, jejichž debutové sbírky vydalo nakladatelství Větrné Mlýny pod edicí MLAT. Mezi básníky z brněnské a ostravské undergroundové scény přednese svou tvorbu i Filip Klega oceněný cenou Jiřího Ortena.<br>Vstupné: 70 Kč</p>
+</div>
+<div class='event' timestamp='2023-11-28'>
+<p class='date'>Úterý 28. 11., 19:30</p>
+<p class='place'>Jiráskovo gymnázium Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/860260555650822' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'>Slam poetry</p>
+<p class='author'></p>
+<p class='description'>Někde na pomezí poezie a divadla interagujeme, recitujeme, improvizujeme, hrajeme, objevujeme, PERFORMUJEME.<br>Vstupné: 120 Kč v předprodeji / 150 Kč na místě</p>
+</div>
+<div class='event' timestamp='2023-11-30'>
+<p class='date'>Čtvrtek 30. 11., 19:00</p>
+<p class='place'>Jiráskovo gymnázium Náchod</p>
+<p class='facebook-event'><a href='https://www.facebook.com/events/994014748500467' target='_blank'>
+<img src='facebook.svg' alt='Facebook'></a></p><p class='title'></p>
+<p class='author'>Petr Váša</p>
+<p class='description'>Jedinečně dynamická performance, která vás komplexně vytrhne ze zajetých kolejí. Kombinuje prvky slovně poetické, rytmicky hudební a pohybově divadelní v jednom, krásně absurdním celku.<br>Vstupné: 120 Kč v předprodeji / 150 Kč na místě</p>
+</div>
+		</article>
+		<article id="past-events">
+		</article>
+		<footer>
+			<a target="_blank" href="https://www.facebook.com/nachodskednypoezie.cz/">
+				<img src="facebook.svg" alt="Facebook Náchodské dny poezieu">
+			</a>
+			<p>kontakt: macura@gymnachod.cz</p>
+		</footer>
+	</content>
+	</main>
+</body>
+</html>
